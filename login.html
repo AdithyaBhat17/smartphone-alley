@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign-Up</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800,900|Lato:400,700,900" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<style>
+body{
+      background:url('https://images.unsplash.com/photo-1495175448924-1d9a30c90a42?auto=format&fit=crop&w=1502&q=80');
+      background-size: cover;
+      background-position: center;
+      font-family: Lato;
+    }
+    
+html{
+      height: 100%;
+    }
+
+    .login{
+      text-align:center;
+    }
+    .btn--form {
+  /*padding: .5rem 2.5rem;
+  margin-left:0;*/
+  font-size: .95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: #111;
+  border-radius: remy(35px);
+  &:focus,
+  &:hover {background: lighten(#111, 13%);}
+}
+
+form{
+  margin:120px auto;
+  background: rgba(255,255,255,0.8);
+  padding:35px ;
+  width:32%;
+  border:5px solid grey;
+  border-radius:5px;
+ 
+}
+
+
+.signup__link {
+  font-size: .8em;
+  padding-left: 15px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: black;
+  &:focus,
+  &:hover {color: darken(#999, 13%);}
+}
+@media only screen and (max-width: 320px){
+  form{
+      width: 100%;
+      margin:100px auto;
+      padding:20px 10px 20px 10px ;
+    }
+  
+  }
+  @media only screen and (min-width:321px) and (max-width: 400px){
+  form{
+      width: 90%;
+      margin:100px auto;
+      padding:20px 15px 20px 15px ;
+    }
+ 
+  }
+  @media only screen and (min-width:401px) and (max-width: 478px){
+  form{
+      width: 80%;
+      margin:100px auto;
+      padding:20px 15px 20px 15px ;
+    }
+
+  }
+  @media only screen and (min-width:479px) and (max-width: 700px){
+  form{
+      width: 70%;
+      margin:100px auto;
+      padding:20px 15px 20px 15px ;
+    }
+  }
+  @media only screen and (min-width:701px) and (max-width: 1000px){
+  form{
+      width: 50%;
+      margin:150px auto;
+      padding:20px 15px 20px 15px ;
+    }
+  }
+ 
+
+[type="text"] {color: #111;}
+[type="password"] {color: #111;}
+
+label {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: black;
+}
+
+.form-control {
+  background-color: transparent;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  &:focus {border-color: #111;}
+
+a,
+[type="submit"] {transition: all .25s ease-in;}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html" style="font-weight: 700"><i class="fa fa-mobile" aria-hidden="true"></i> SMARTPHONE ALLEY</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Price Range <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" style="text-align: center"><i class="fa fa-money" aria-hidden="true"></i> Rs.20,000</a></li>
+            <li><a href="#" style="text-align: center"><i class="fa fa-money" aria-hidden="true"></i> Rs.40,000</a></li>
+            <li><a href="#" style="text-align: center"><i class="fa fa-money" aria-hidden="true"></i> Rs.60,000</a></li>
+            
+            <li><a href="#" style="text-align: center"><i class="fa fa-money" aria-hidden="true"></i> Rs.80,000</a></li>
+            
+            <li><a href="#" style="text-align: center"><i class="fa fa-money" aria-hidden="true"></i> Rs.1,00,000</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html">Sign Up <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
+        <li><a href="#">Log In <i class="fa fa-user" aria-hidden="true"></i></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+
+
+  <div class="container">
+    <form action="#">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="yourname@domain.com" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" id="password" placeholder="********" required />
+      </div>
+      <div class="login">
+        <input type="submit" class="btn btn--form" value="Log In">
+        <a class="signup__link" href="signup.html">Create an account here</a> 
+      </div>
+    </form>  
+  </div>
+</div>
+</div>
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

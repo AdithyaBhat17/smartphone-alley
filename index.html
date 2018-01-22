@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smartphone Alley</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800,900|Lato:400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+		@-webkit-keyframes imagebox {
+  			0% {
+    			background-image: url('https://images.unsplash.com/photo-1432850252397-8be919d9ba23?auto=format&fit=crop&w=1500&q=80');
+  			}
+  			40% {
+    			background-image: url('https://images.unsplash.com/photo-1495549115977-ca0a18c9f6a4?auto=format&fit=crop&w=1500&q=80');
+    			}
+  			80% {
+  				background-image: url('https://images.unsplash.com/photo-1507128514311-5cc22ae7462c?auto=format&fit=crop&w=1500&q=80');
+    			}
+  			100% {
+    			background-image: url('https://images.unsplash.com/photo-1432850252397-8be919d9ba23?auto=format&fit=crop&w=1500&q=80');
+    			}
+			}
+			@-moz-keyframes imagebox {
+  			0% {
+    			background-image: url('https://images.unsplash.com/photo-1432850252397-8be919d9ba23?auto=format&fit=crop&w=1500&q=80');
+  			}
+  			40% {
+    			background-image: url('https://images.unsplash.com/photo-1495549115977-ca0a18c9f6a4?auto=format&fit=crop&w=1500&q=80');
+    			}
+  			80% {
+  				background-image: url('https://images.unsplash.com/photo-1507128514311-5cc22ae7462c?auto=format&fit=crop&w=1500&q=80');
+    			
+    			}
+  			100% {
+    			background-image: url('https://images.unsplash.com/photo-1432850252397-8be919d9ba23?auto=format&fit=crop&w=1500&q=80');
+    			}
+			}
+
+			@-o-keyframes imagebox {
+  			0% {
+    			background-image: url('https://images.unsplash.com/photo-1432850252397-8be919d9ba23?auto=format&fit=crop&w=1500&q=80');
+  			}
+  			40% {
+    			background-image: url('https://images.unsplash.com/photo-1495549115977-ca0a18c9f6a4?auto=format&fit=crop&w=1500&q=80');
+    			}
+  			80% {
+  				background-image: url('https://images.unsplash.com/photo-1507128514311-5cc22ae7462c?auto=format&fit=crop&w=1500&q=80');
+    			
+    			}
+  			100% {
+    			background-image: url('https://images.unsplash.com/photo-1432850252397-8be919d9ba23?auto=format&fit=crop&w=1500&q=80');
+    			}
+			}
+
+
+		body{
+   			background-size:cover;
+   			background-position:center;
+   			-webkit-animation: imagebox 50s infinite ease-in-out;
+   			-moz-animation: imagebox 50s infinite ease-in-out;
+   			-o-animation: imagebox 50 infinite ease-in-out;
+		}
+		
+		html{
+			height: 100%;
+		}
+		#content{
+			text-align:center;
+			padding-top: 40px;
+			
+		}
+		h1,h3{
+			color:#2c3e50;
+		}
+		h1{
+			font-weight: 700;
+			font-size: 4em;
+		}
+		hr{
+			width:450px;
+			border-top: 1px solid #f8f8f8;
+			border-bottom: 1px solid rgba(0,0,0,0.2);
+		}
+	</style>
+	<script type="text/javascript" src="image.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="font-weight: 700"><i class="fa fa-mobile" aria-hidden="true"></i> SMARTPHONE ALLEY</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Price Range <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" style="text-align: center"><i class="fa fa-money" aria-hidden="true"></i> Rs.20,000</a></li>
+            <li><a href="#" style="text-align: center"><i class="fa fa-money" aria-hidden="true"></i> Rs.40,000</a></li>
+            <li><a href="#" style="text-align: center"><i class="fa fa-money" aria-hidden="true"></i> Rs.60,000</a></li>
+            
+            <li><a href="#" style="text-align: center"><i class="fa fa-money" aria-hidden="true"></i> Rs.80,000</a></li>
+            
+            <li><a href="#" style="text-align: center"><i class="fa fa-money" aria-hidden="true"></i> Rs.1,00,000</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html">Sign Up <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
+        <li><a href="login.html">Log In <i class="fa fa-user" aria-hidden="true"></i></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="content">
+					<!-- <h1>Smartphone Alley</h1> -->
+					<!-- <h3>Find your Smartphone companion</h3> -->
+				
+				<!-- <hr> -->
+					<button type="button" class="btn btn-default btn-lg" style="color:#2F4F4F;">Get Started!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="image.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
